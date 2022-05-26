@@ -63,10 +63,10 @@ public class DatabaseManager : MonoBehaviour
 
     public void UpdateName()
     {
-        dbreference.Child("users").Child("name").SetValueAsync(Name.text);
+        dbreference.Child("users").Child(UserID).Child("name").SetValueAsync(Name.text);
     }
     public void UpdateGold()
     {
-        dbreference.Child("users").Child("name").SetValueAsync(Gold.text);
+        dbreference.Child("users").Child(UserID).Child("gold").SetValueAsync(Gold.text);
     }
 }
